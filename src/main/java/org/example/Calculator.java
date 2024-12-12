@@ -13,7 +13,7 @@ public class Calculator {
 
     /**
      * <p>
-     *     The method is computing the expression into meters then converting into the specified unit measure
+     * The method is computing the expression into meters then converting into the specified unit measure
      * </p>
      *
      * @param unitMeasure the unit measure in which the result is computed and returned
@@ -39,7 +39,7 @@ public class Calculator {
             } else if (expression.charAt(i) == '-') {
                 addValue = false;
             }
-        //Implementation for subtraction
+            //Implementation for subtraction
             if (!addValue) {
                 if (measure.equals("mm")) {
                     result = result - (nr / 1000);
@@ -68,7 +68,7 @@ public class Calculator {
                     addValue = true;
                 }
             }
-        // Implementation for adding
+            // Implementation for adding
             if (addValue) {
                 if (measure.equals("mm")) {
                     result = result + (nr / 1000);
